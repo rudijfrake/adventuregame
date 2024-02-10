@@ -1,7 +1,7 @@
 # main.py
 
 from models import Game, Player
-from scenes import CrossroadsScene, TreasureScene, LockedDoorScene
+from scenes import CrossroadsScene, TreasureScene, EnterLockedDoorScene
 
 
 # Sets up the game
@@ -18,7 +18,7 @@ def main():
     # Add scenes to the game
     game.add_scene("crossroads_scene", CrossroadsScene())
     game.add_scene("treasure_scene", TreasureScene())
-    game.add_scene("locked_door_scene", LockedDoorScene())
+    game.add_scene("locked_door_scene", EnterLockedDoorScene())
 
     # Set starting scene
     game.set_starting_scene("crossroads_scene")

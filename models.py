@@ -51,7 +51,7 @@ class Game:
     def start(self):
         while self.game_running and self.current_scene:
             # Enter the current scene and get the next scene's name
-            next_scene_name = self.current_scene.enter()
+            next_scene_name = self.current_scene.enter(self.player)
 
             # Change to the next scene
             self.next_scene(next_scene_name)
